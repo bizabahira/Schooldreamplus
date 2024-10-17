@@ -112,28 +112,9 @@ offered on-site or remotely</small></div>
     </a>
 </div>
 
-<div id="searchResults" style="margin-top: 10px; color: #333;"></div>
-
-<script>
-    document.getElementById("searchButton").addEventListener("click", function(event) {
-        event.preventDefault(); // Prevent the default anchor behavior
-        const query = document.getElementById("searchInput").value.toLowerCase();
-        const content = document.body.innerText.toLowerCase(); // Search through the entire body content
-        const resultsContainer = document.getElementById("searchResults");
-
-        // Clear previous results
-        resultsContainer.innerHTML = '';
-
-        // Check if the search query is in the content
-        if (content.includes(query)) {
-            resultsContainer.innerHTML = `<p>Results for "${query}": Found!</p>`;
-        } else {
-            resultsContainer.innerHTML = `<p>No results found for "${query}".</p>`;
-        }
-    });
-</script>
-
-
+<div class="d-flex align-items-center justify-content-center ms-4 ">
+                            <a href="#"><i class="bi bi-search text-white fa-2x"></i> </a>
+                        </div>
                     </div>
                 </nav>
             </div>
@@ -162,7 +143,7 @@ offered on-site or remotely</small></div>
                         </div>
                     </div>
                     <div class="carousel-item">
-                        <img src="img/background_image.webp" class="img-fluid" alt="Second slide">
+                        <img src="img\img_enhanced.png" class="img-fluid" alt="Second slide">
                         <div class="carousel-caption">
                             <div class="container carousel-content">
                                 <h6 class="text-secondary h4 animated fadeInUp">Leading IT Solutions</h6>
@@ -267,7 +248,7 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">Professional IT Solutions</h4>
                             <p class="mb-4">We offer secure, efficient IT services like website development, online booking, Irembo, Papeterie, virtual consultations, and more. Support available both remotely and on-site.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
@@ -281,11 +262,25 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">Business Development</h4>
                             <p class="mb-4">Unlock growth with strategies tailored to your goals. We offer remote and on-site business development services to help you thrive in today's market.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Teaching & Guiding Services -->
+            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="1.1s">
+                <div class="services-item bg-light">
+                    <div class="p-4 text-center services-content">
+                        <img src="img/TEACHING.webp" alt="Teaching & Guiding" class="img-fluid mb-3" style="max-height: 260px;">
+                        <div class="services-content-icon">
+                            <h4 class="mb-3">Training & Guiding Services</h4>
+                            <p class="mb-4">We offer technology guidance, IT training, computer and phone help, and customized tutoring services. Available both remotely and on-site to support your learning needs.</p>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             <!-- Government Services -->
             <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
@@ -295,7 +290,7 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">Government Services</h4>
                             <p class="mb-4">We assist with Irembo, Rwanda Revenue Authority (RRA), Mifotra, RURA, national registration, business permits, and more. Services available remotely and on-site.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
@@ -309,7 +304,7 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">Printing & Design Services</h4>
                             <p class="mb-4">From invitation cards to business cards and brochures, we offer custom printing and design solutions. Services available remotely and on-site as needed.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
@@ -323,7 +318,7 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">IT & Technician Services</h4>
                             <p class="mb-4">We offer software installation, computer troubleshooting, cybersecurity, computer maintenance, and hardware support like RAM and hard disk installations. Available remotely and on-site.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
@@ -337,7 +332,7 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">Photo & Video Services</h4>
                             <p class="mb-4">From photo editing to short video and audio production, we help you create and distribute high-quality visual and audio content. Services available remotely and on-site.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
@@ -351,26 +346,13 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">Marketing & Advertisement</h4>
                             <p class="mb-4">We create online advertisement banners, audio and video ads, and manage social media content to boost your brand visibility. Services available remotely and on-site.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Teaching & Guiding Services -->
-            <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay="1.1s">
-                <div class="services-item bg-light">
-                    <div class="p-4 text-center services-content">
-                        <img src="img/TEACHING.webp" alt="Teaching & Guiding" class="img-fluid mb-3" style="max-height: 260px;">
-                        <div class="services-content-icon">
-                            <h4 class="mb-3">Teaching & Guiding Services</h4>
-                            <p class="mb-4">We offer technology guidance, IT training, computer and phone help, and customized tutoring services. Available both remotely and on-site to support your learning needs.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            
             <!-- Virtual Assistance Services -->
             <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".5s">
                 <div class="services-item bg-light">
@@ -379,7 +361,7 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">Virtual Assistance</h4>
                             <p class="mb-4">Our virtual assistants support administrative tasks, client communication, research, scheduling, and more. Enhance your business operations remotely from anywhere.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
@@ -393,7 +375,7 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">Remote Desktop Support</h4>
                             <p class="mb-4">We provide fast, efficient remote desktop support for troubleshooting, software installation, and other IT services to keep your systems running smoothly.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
@@ -407,7 +389,7 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">Community Engagement Initiatives</h4>
                             <p class="mb-4">We engage in community projects, offering IT training, workshops, and support to uplift local businesses, schools, and individuals with digital literacy and skills. Available remotely and on-site.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
@@ -420,7 +402,7 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">Career Services</h4>
                             <p class="mb-4">Enhance your career with our resume and cover letter writing, personalized counseling, and skills development workshops tailored to your professional growth.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
@@ -434,7 +416,7 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">Freelancing Services</h4>
                             <p class="mb-4">Get guidance for aspiring freelancers, attend workshops on best practices, and access networking opportunities to expand your freelance career.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
@@ -448,7 +430,7 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">Digital Marketing & Branding</h4>
                             <p class="mb-4">Boost your brand with our social media management, SEO strategies, and online advertising solutions designed to increase your online presence.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
@@ -462,7 +444,7 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">Remote Work Platforms</h4>
                             <p class="mb-4">Receive training on remote work tools, guidance on selecting freelance platforms, and learn best practices to enhance your remote work efficiency.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
@@ -476,7 +458,7 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">Project Management</h4>
                             <p class="mb-4">Access on-site project management assistance, attend skill-enhancing workshops, and receive consulting services tailored for local businesses.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
@@ -490,7 +472,7 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">Messenger Services</h4>
                             <p class="mb-4">Enjoy document and package delivery, on-demand errands, legal task assistance, administrative support, and personalized errand running for your convenience.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
@@ -503,7 +485,7 @@ offered on-site or remotely</small></div>
                         <div class="services-content-icon">
                             <h4 class="mb-3">Other Services</h4>
                             <p class="mb-4">Our additional services include enrollment assistance, online banking support, loan applications, online ticket bookings, and much more. Services available remotely and on-site.</p>
-                            <a href="contact.html" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
+                            <a href="#contact" class="btn btn-secondary text-white px-5 py-3 rounded-pill">Book a Service</a>
                         </div>
                     </div>
                 </div>
@@ -968,7 +950,7 @@ A2 diploma in Languages. Currently in the second year of a Bachelor of Arts in M
                     <a href="#contact" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Contact Us</a>
                     <a href="#services" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Services</a>
                     <a href="#project" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Our Projects</a>
-                    <a href="#Team" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Team</a>
+                    <a href="#team" class="mb-2 text-white"><i class="fas fa-angle-right text-secondary me-2"></i>Team</a>
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -1006,7 +988,9 @@ A2 diploma in Languages. Currently in the second year of a Bachelor of Arts in M
 
 
         <!-- Back to Top -->
-        <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top"><i class="fa fa-arrow-up text-white"></i></a>
+       <a href="#" class="btn btn-secondary btn-square rounded-circle back-to-top" style="position: fixed; bottom: 80px; right: 30px; z-index: 1000;">
+    <i class="fa fa-arrow-up text-white"></i>
+</a>
 
         
         <!-- JavaScript Libraries -->
