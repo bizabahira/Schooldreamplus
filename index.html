@@ -105,26 +105,20 @@ offered on-site or remotely</small></div>
                             <span class="text-white-50">Have any questions?</span>
                             <span class="text-secondary">Call: +250 782 589 800</span>
                         </div>
-                       <div id="searchContainer" style="margin: 20px;">
-    <input type="text" id="searchInput" placeholder="Search..." style="padding: 10px; width: 200px;" />
-    <button id="searchButton" style="padding: 10px;">Search</button>
+             <div class="d-flex align-items-center justify-content-center ms-4">
+    <input type="text" id="searchInput" placeholder="Search..." style="padding: 10px; margin-right: 5px; border: 1px solid #ccc; border-radius: 5px; transition: border-color 0.3s; width: 200px;">
+    <a href="#" id="searchButton">
+        <i class="bi bi-search text-white fa-2x"></i>
+    </a>
 </div>
 
-<div id="content">
-    <h2>Welcome to School Dream Plus</h2>
-    <p>This is a platform offering various IT services.</p>
-    <h3>Our Services</h3>
-    <p>We provide online courses, IT training, website development, and more.</p>
-    <p>Contact us for virtual assistance and support.</p>
-    <!-- Add more content as needed -->
-</div>
-
-<div id="searchResults" style="margin-top: 20px;"></div>
+<div id="searchResults" style="margin-top: 10px; color: #333;"></div>
 
 <script>
-    document.getElementById("searchButton").addEventListener("click", function() {
+    document.getElementById("searchButton").addEventListener("click", function(event) {
+        event.preventDefault(); // Prevent the default anchor behavior
         const query = document.getElementById("searchInput").value.toLowerCase();
-        const content = document.getElementById("content").innerText.toLowerCase();
+        const content = document.body.innerText.toLowerCase(); // Search through the entire body content
         const resultsContainer = document.getElementById("searchResults");
 
         // Clear previous results
@@ -138,6 +132,7 @@ offered on-site or remotely</small></div>
         }
     });
 </script>
+
 
                     </div>
                 </nav>
